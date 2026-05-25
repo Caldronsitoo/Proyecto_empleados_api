@@ -34,7 +34,7 @@ export default function EmpleadoList({ empleados, onEditar, onEliminar }) {
                   className="btn btn-edit"
                   title="Editar empleado"
                 >
-                  ✏️ Editar
+                  Editar
                 </button>
                 <button
                   onClick={() => onEliminar(empleado.idEmpleado)}

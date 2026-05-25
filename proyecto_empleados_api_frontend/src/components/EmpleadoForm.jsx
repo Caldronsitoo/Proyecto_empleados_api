@@ -74,7 +74,7 @@ export default function EmpleadoForm({ empleado, onGuardar, onCancelar }) {
   return (
     <div className="form-container">
       <div className="form-card">
-        <h2>{empleado ? '✏️ Editar Empleado' : '➕ Nuevo Empleado'}</h2>
+        <h2>{empleado ? 'Editar Empleado' : 'Nuevo Empleado'}</h2>
         
         <form onSubmit={handleSubmit}>
           <div className="form-group">
@@ -131,10 +131,10 @@ export default function EmpleadoForm({ empleado, onGuardar, onCancelar }) {
 
           <div className="form-actions">
             <button type="submit" className="btn btn-success">
-              {empleado ? '💾 Actualizar' : '✅ Crear'}
+              {empleado ? 'Actualizar' : 'Crear'}
             </button>
             <button type="button" onClick={onCancelar} className="btn btn-secondary">
-              ❌ Cancelar
+              Cancelar
             </button>
           </div>
         </form>

@@ -82,7 +82,7 @@ export default function App() {
   return (
     <div className="app-container">
       <header className="app-header">
-        <h1>🏢 Gestión de Empleados</h1>
+        <h1>Gestión de Empleados</h1>
         <p className="subtitle">Sistema de Recursos Humanos</p>
       </header>
 
@@ -93,7 +93,7 @@ export default function App() {
           <div className="search-box">
             <input
               type="text"
-              placeholder="🔍 Buscar por nombre o departamento..."
+              placeholder="Buscar por nombre o departamento..."
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
               className="search-input"
@@ -103,7 +103,7 @@ export default function App() {
             onClick={() => setShowForm(!showForm)}
             className="btn btn-primary"
           >
-            {showForm ? '❌ Cancelar' : '➕ Nuevo Empleado'}
+            {showForm ? 'Cancelar' : 'Nuevo Empleado'}
           </button>
         </div>
 
@@ -115,11 +115,11 @@ export default function App() {
           />
         )}
 
-        {loading && <div className="loading">⏳ Cargando empleados...</div>}
+        {loading && <div className="loading">Cargando empleados...</div>}
 
         {!loading && empleadosFiltrados.length === 0 ? (
           <div className="empty-state">
-            <p>📭 No hay empleados para mostrar</p>
+            <p>No hay empleados para mostrar</p>
           </div>
         ) : (
           <EmpleadoList
